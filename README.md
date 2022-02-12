@@ -35,5 +35,9 @@ THEN the password is either displayed in an alert or written to the page
 ```
 
 '''
-![Alt text](/Denver-Homework-03=JS/SS.png? raw=true "password SS")
+
+https://thekid303.github.io/03-Js-Password-Generator/
+
+
+
 # 03-Js-Password-Generator
