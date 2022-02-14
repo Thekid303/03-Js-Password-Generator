@@ -20,7 +20,7 @@ function generatePassword() {
 
 
 
-  // if password length provided is less than the min or more than the max will return an error and require the user to start again
+  // if password length provided is less than the min or more than the max will return an error 
   //password length must be met before user can select password
   else {
     alert('Your password must be at least 8, but no more than 128, characters.')
@@ -89,6 +89,7 @@ function generatePassword() {
   for (let i = 0; i < pwLength; i++) {
 
     password += possChars[Math.floor(Math.random() * possChars.length)];
+    console.log(password)
   }
   return password;
 }
