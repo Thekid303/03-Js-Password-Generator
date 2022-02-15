@@ -33,19 +33,19 @@ function generatePassword() {
 
   // choose if user wants lower case letters
   var chooseLower = confirm('Do you want to use lower case letters?')
-  console.log(chooseLower)
+
 
   // choose if user wants upper case letters
   var chooseUpper = confirm('Do you want to use upper case letters?')
-  console.log(chooseUpper)
+
 
   // choose if user wants numbers
   var chooseNumber = confirm('Do you want to use numbers?')
-  console.log(chooseNumber)
+
 
   // choose if user wants special characters
   var chooseSpecial = confirm('Do you want to use special characters?')
-  console.log(chooseSpecial)
+
 
 
 
@@ -89,7 +89,7 @@ function generatePassword() {
   for (let i = 0; i < pwLength; i++) {
 
     password += possChars[Math.floor(Math.random() * possChars.length)];
-    console.log(password)
+
   }
   return password;
 }
