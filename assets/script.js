@@ -31,19 +31,19 @@ function generatePassword() {
 
 
 
-  // choose if user wants lower case letters
+  // choose if lower case letters
   var chooseLower = confirm('Do you want to use lower case letters?')
+  console.log(chooseLower)
 
-
-  // choose if user wants upper case letters
+  // choose if upper case letters
   var chooseUpper = confirm('Do you want to use upper case letters?')
 
 
-  // choose if user wants numbers
+  // choose if numbers
   var chooseNumber = confirm('Do you want to use numbers?')
 
 
-  // choose if user wants special characters
+  // choose if special characters
   var chooseSpecial = confirm('Do you want to use special characters?')
 
 
@@ -76,7 +76,7 @@ function generatePassword() {
 
   // will stop and return an alert if there are no character types selected
   if (
-    !chooseLower && !chooseCapUpper && !chooseNumber && !chooseSpecial
+    !chooseLower && !chooseUpper && !chooseNumber && !chooseSpecial
   ) {
     return alert('Please select at least one criteria!');
 
@@ -100,6 +100,7 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector('#password');
   passwordText.value = password;
+  console.log(password)
 }
 
 // Add event listener to generate button
